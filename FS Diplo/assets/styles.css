@@ -433,3 +433,8 @@
                 justify-content: center;
             }
         }
+        @media (max-width: 879px) {
+  .hero-section {
+    margin-top: 0;
+  }
+}
