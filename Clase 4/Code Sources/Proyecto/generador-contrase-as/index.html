@@ -1,0 +1,49 @@
+<!-- //El Codigo JS lo terminaremos de analizar y desarrollar en la clase 5
+//Por ahora tienes  los recursos visuales html y css
+--- -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>Generador de contraseñas</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+     
+    <main class="container">
+        <div class="container__contenido">
+            <div class="container__informacion">
+                <div class="container__texto">
+                    <h1>Generador<span class="container__texto-azul"> de Contraseñas</span></h1>
+                    <div class="container__campo"> 
+                        <label class="texto__parrafo">Cantidad
+                            <input class="container__input" type="number" id="cantidad" >
+                        </label>
+                        <button class="boton" id="generar" onclick="generarPass()" >Generar</button>
+                        <button class="boton-2" id="limpiar" onclick="cleanPass()" >Limpiar</button>
+                        
+                    </div> 
+                    <div class="container__campo">
+                        <input class="container__contrasena" type="text" id="contrasena" placeholder="contraseña">
+                        <button class="boton-3" onclick="copyText()"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copy" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1875E8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" />
+                            <path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" />
+                          </svg></button>
+                          <!-- Mensaje suave -->
+    <div id="copyMessage">Texto copiado en portapapeles</div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+ 
+    </main>
+    
+    <script src="main.js"></script> 
+</body>
+</html>

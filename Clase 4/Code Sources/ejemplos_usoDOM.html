@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejemplo DOM</title>
+</head>
+<body>
+
+<!-- Ejemplo 1 -->
+ <h1>DOM Uses</h1>
+  <p id="miParrafo">Este es el texto original.</p>
+  <button onclick="cambiarTexto()">Cambiar Texto</button>
+<!-- Ejemplo 2 -->
+ 
+  <button id="btn">Haz clic aquí</button>
+
+  <script>
+    // Script Ejemplo 1:
+    function cambiarTexto() {
+      // Acceder al elemento con el ID "miParrafo"
+      const parrafo = document.getElementById("miParrafo");
+
+      // Modificar su contenido
+      parrafo.innerText = "¡El texto ha sido cambiado!";
+    }
+      // Se crea un párrafo con el ID "miParrafo" y un botón.
+      // Al hacer clic en el botón, se llama a la función cambiarTexto().
+      // cambiarTexto() utiliza document.getElementById("miParrafo") para obtener una referencia al elemento párrafo.
+      // Luego, parrafo.innerText = "¡El texto ha sido cambiado!"; cambia el contenido de texto del párrafo al nuevo texto.
+
+    // Script Ejemplo 2:
+        document.getElementById("btn").addEventListener("click", function() {
+      alert("¡Clic!");
+    });
+
+      //  document.getElementById("btn"):
+      //  Busca un elemento en el HTML que tenga el atributo id="btn".
+      // .addEventListener("click", function() { ... }):
+      //  Agrega un escuchador de eventos para detectar cuando ese elemento (el botón) sea clicado.
+      // alert("¡Clic!");:
+      //  Cuando se hace clic en el botón, se ejecuta esta función anónima que muestra una ventana emergente (alert) con el mensaje "¡Clic!".
+  </script>
+</body>
+</html>

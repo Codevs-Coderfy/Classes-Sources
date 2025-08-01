@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f5f8ff, #e3e9f4);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("img/candado.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  min-height: 50vh;
+  background-color: #ffffffdd;
+  border-radius: 20px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.container__contenido {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+}
+
+.container__informacion {
+  flex: 1;
+  padding: 2.5rem;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #0a2a68;
+  margin-bottom: 1rem;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.container__texto {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.container__texto-azul {
+  color: #1875E8;
+  font-weight: 600;
+}
+
+.container__campo {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.texto__parrafo {
+  font-size: 20px;
+  font-weight: 500;
+  color: #444;
+}
+
+.container__input,
+.container__contrasena {
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  font-size: 18px;
+  color: #1e293b;
+  width: 100%;
+  max-width: 250px;
+  background-color: #f9fafb;
+}
+
+.boton, .boton-2, .boton-3 {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(24, 117, 232, 0.2);
+  transition: all 0.3s ease;
+}
+
+.boton {
+  background-color: #1875E8;
+  color: #fff;
+}
+
+.boton:hover {
+  background-color: #0f5fc2;
+}
+
+.boton-2, .boton-3 {
+  background-color: #ffffff;
+  color: #1875E8;
+  border: 1px solid #1875E8;
+}
+
+.boton-3 {
+  max-width: 100px;
+}
+
+/* Mensaje copiado */
+#copyMessage {
+  visibility: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1e293b;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+  font-family: 'Chakra Petch', sans-serif;
+  z-index: 999;
+}
+
+#copyMessage.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 40px;
+  }
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container__campo {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .container__input,
+  .container__contrasena,
+  .boton, .boton-2, .boton-3 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 32px;
+  }
+  .texto__parrafo {
+    font-size: 18px;
+  }
+}
