@@ -1,0 +1,192 @@
+/* Estilos generales para el portafolio personal */
+/* Selector global: aplica a todo el documento */
+* {
+    margin: 0;
+    /* Quita los márgenes predeterminados */
+    padding: 0;
+    /* Quita el padding predeterminado */
+    box-sizing: border-box;
+    /* Incluye padding y border en el ancho total */
+    font-family: Arial, sans-serif;
+    /* Tipografía base */
+}
+
+/* Cuerpo de la página */
+body {
+    background-color: #f5f5f5;
+    /* Color de fondo claro */
+    color: #333;
+    /* Color de texto principal */
+    line-height: 1.6;
+    /* Espaciado entre líneas */
+    padding: 20px;
+    /* Espacio alrededor del contenido */
+}
+
+/* Encabezado principal */
+header {
+    text-align: center;
+    /* Centra el contenido */
+    margin-bottom: 20px;
+    /* Espacio debajo del header */
+}
+
+header h1 {
+    color: #2c3e50;
+    /* Color del título */
+}
+
+header p {
+    font-size: 1.1em;
+    /* Tamaño de fuente un poco mayor */
+}
+
+/* Separadores */
+hr {
+    margin: 30px 0;
+    /* Espacio arriba y abajo */
+    border: 0;
+    border-top: 2px solid #ccc;
+    /* Línea gris */
+}
+
+/* Secciones */
+section {
+    background-color: #fff;
+    /* Fondo blanco para secciones */
+    padding: 20px;
+    /* Espacio dentro de la sección */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+    margin-bottom: 20px;
+    /* Espacio entre secciones */
+}
+/*Especificidad*/
+#about-me {
+    display: flex;
+    /* Activa Flexbox en el contenedor */
+    justify-content: center;
+    /* Centra horizontalmente los elementos hijos */
+    align-items: center;
+    /* Centra verticalmente los elementos hijos */
+    text-align: center;
+    /* Para centrar texto dentro de hijos si es necesario */
+    flex-direction: column;
+    /* Si quieres que los elementos estén uno debajo del otro */
+    gap: 10px;
+}
+
+section h2 {
+    color: #2980b9;
+    /* Color de los títulos de sección */
+    margin-bottom: 15px;
+}
+
+/* Lista de proyectos */
+ul {
+    list-style-type: disc;
+    /* Tipo de viñeta */
+    padding-left: 20px;
+    /* Sangría de la lista */
+}
+
+/* Imagen de perfil */
+img {
+    display: block;
+    /* Evita espacio debajo de la imagen */
+    margin-top: 10px;
+    border-radius: 50%;
+    /* Imagen circular */
+    width: 150px;
+    /* Tamaño fijo */
+    height: 150px;
+}
+
+/* Tabla de habilidades */
+table {
+    width: 100%;
+    /* Ocupa todo el ancho de la sección */
+    border-collapse: collapse;
+    /* Une bordes */
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    /* Bordes de celdas */
+    padding: 10px;
+    /* Espacio dentro de celdas */
+    text-align: left;
+    /* Alineación de texto */
+}
+
+th {
+    background-color: #2980b9;
+    /* Fondo de encabezados */
+    color: #fff;
+    /* Color del texto en encabezados */
+}
+
+
+    .contact-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .contact-header h2 {
+        color: #2980b9;
+        font-size: 1.8em;
+    }
+
+    /* Grid principal */
+    .contact-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Dos columnas */
+        gap: 15px;
+    }
+
+    /* Cada grupo de label + input se alinea verticalmente */
+    .form-group {
+        display: flex;
+        flex-direction: column; /* Label encima del input */
+    }
+
+    /* Asignación de columnas */
+    .form-group.nombre { grid-column: 1; }
+    .form-group.correo { grid-column: 2; }
+    .form-group.mensaje { grid-column: 1 / -1; }
+    .form-group.button-group { grid-column: 1 / -1; }
+
+    /* Inputs, textarea y botón */
+    input, textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    button {
+        padding: 10px;
+        background-color: #2980b9;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #3498db;
+    }
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    color: #777;
+    font-size: 0.9em;
+}
