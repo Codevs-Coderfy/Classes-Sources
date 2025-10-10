@@ -1,0 +1,11 @@
+/* Selector global: aplica a todo el documento */
+* {
+    margin: 0;
+    /* Quita los márgenes predeterminados */
+    padding: 0;
+    /* Quita el padding predeterminado */
+    box-sizing: border-box;
+    /* Incluye padding y border en el ancho total */
+    font-family: Arial, sans-serif;
+    /* Tipografía base */
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Personal</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+
+    <!-- Encabezado principal -->
+    <header>
+        <h1>Bienvenido a mi Portafolio</h1>
+        <p>Este es un proyecto práctico solo con HTML5 y Css3.</p>
+    </header>
+
+    <hr>
+
+    <!-- Sección de presentación -->
+    <section id="about-me">
+        <h2>Sobre mí</h2>
+        <p>Hola, me llamo <span>Manuel</span>. Estoy aprendiendo desarrollo web y este es mi primer proyecto real solo con HTML.</p>
+        <img src="./assets/src/img/userAvatar.png" alt="Foto de perfil">
+    </section>
+
+    <hr>
+
+    <!-- Sección de proyectos -->
+    <section>
+        <h2>Mis Proyectos</h2>
+        <ul>
+            <li>Proyecto 1: Página básica en HTML</li>
+            <li>Proyecto 2: Formulario de contacto</li>
+            <li>Proyecto 3: Tabla de productos</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- Sección con una tabla -->
+    <section>
+        <h2>Habilidades</h2>
+        <table border="1">
+            <tr>
+                <th>Lenguaje</th>
+                <th>Nivel</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Básico</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>En proceso</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>En proceso</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- Formulario simple -->
+ <section id="contacto">
+    <!-- Encabezado con título y SVG -->
+    <div class="contact-header">
+        <h2>Contáctame</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#2980b9" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-5.857 3.514L15 12.383V5.383zm-6.12 3.558L2 5.383v7l5.88-3.442zm-.88.779L1 13V4l7 4.2 7-4.2v9l-7-4.28z"/>
+        </svg>
+    </div>
+
+    <!-- Formulario organizado con Grid -->
+    <form class="contact-form">
+        <!-- Columna izquierda: Nombre -->
+        <div class="form-group nombre">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <!-- Columna derecha: Correo -->
+        <div class="form-group correo">
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+        </div>
+
+        <!-- Fila completa: Mensaje -->
+        <div class="form-group mensaje">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+        </div>
+
+        <!-- Fila completa: Botón -->
+        <div class="form-group button-group">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</section>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Web Portfolio in Coderfy.</p>
+    </footer>
+
+</body>
+</html>
